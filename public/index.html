@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node.js Sample Project</title>
+  </head>
+  <body>
+    <h1>Welcome to the Node.js Sample Project!</h1>
+    <p>This is a static HTML file served by Node.js.</p>
+    <button onclick="fetchGreeting()">Get Greeting from API</button>
+    <p id="api-response"></p>
+
+    <script>
+      async function fetchGreeting() {
+        const response = await fetch("/api/greeting");
+        const data = await response.json();
+        document.getElementById("api-response").innerText = data.message;
+      }
+    </script>
+  </body>
+</html>
