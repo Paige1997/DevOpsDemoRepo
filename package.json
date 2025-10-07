@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "babel src -d dist"
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +13,5 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.4",
-    "@babel/preset-env": "^7.28.3"
   }
 }
