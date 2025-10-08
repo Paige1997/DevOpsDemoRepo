@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node index.js",
-    "build": "babel src -d dist"
+    "build": "babel index.js -d dist"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,8 @@
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.4",
-    "@babel/preset-env": "^7.28.3"
+    "@babel/preset-env": "^7.28.3",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
   }
 }

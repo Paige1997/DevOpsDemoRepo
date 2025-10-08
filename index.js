@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 // Serve static files from a 'public' directory
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // Define a simple API endpoint
 app.get("/api/greeting", (req, res) => {
