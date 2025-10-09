@@ -4,7 +4,9 @@ files:
   - source: /
     destination: /var/www/html
 hooks:
+  BeforeInstall:
+    - location: scripts/clean.sh
+      timeout: 180
   AfterInstall:
-    - location: scripts/restart_server.sh
-      timeout: 300
-      runas: root
+    - location: scripts/restart.sh
+      timeout: 180
